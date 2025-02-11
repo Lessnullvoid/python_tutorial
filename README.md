@@ -7,27 +7,22 @@ Este tutorial de Python está diseñado tanto para principiantes como para aquel
 
 El tutorial cubre:
 
-- **Introducción**: Explica los objetivos del tutorial.
-- **Prerrequisitos**: Enumera los conocimientos previos o herramientas necesarias.
-- **Instalación**: Te guía en la configuración del software necesario.
-- **Conceptos Básicos**: Introduce las ideas y estructuras fundamentales de Python.
-- **Temas Avanzados**: Profundiza en temas más complejos para continuar aprendiendo.
-- **Ejemplos**: Proporciona ejemplos prácticos de código para reforzar el aprendizaje.
-- **Resolución de Problemas**: Ofrece soluciones a problemas comunes.
-- **Conclusión**: Resume los aspectos clave del tutorial.
-- **Referencias**: Comparte recursos adicionales para seguir estudiando.
-
-## Índice de Secciones
 
 1. [Introducción](#introducción)
-2. [Prerrequisitos](#prerrequisitos)
-3. [Instalación](#instalación)
-4. [Conceptos Básicos](#conceptos-básicos)
-5. [Temas Avanzados](#temas-avanzados)
-6. [Ejemplos](#ejemplos)
-7. [Resolución de Problemas](#resolución-de-problemas)
-8. [Conclusión](#conclusión)
-9. [Referencias](#referencias)
+2. [Basic Syntax](#basic-syntax)
+3. [Control structures](#data-types)
+4. [Data structures](#variables)
+5. [Funtions](#operators)
+6. [Modules](#control-flow)
+7. [File Handling](#functions)
+8. [OOP](#modules)
+9. [Advance](#file-handling)
+10. [Libraries](#error-handling)
+11. [Projects](#classes-and-objects)
+12. [Inheritance](#inheritance)
+13. [Polymorphism](#polymorphism)
+14. [Encapsulation](#encapsulation)
+
 
 ## Cómo Usar Este Tutorial
 
@@ -41,6 +36,6 @@ Cada sección se construye progresivamente:
 - Resuelve cualquier inconveniente en la sección de **Resolución de Problemas**.
 - Finaliza con la **Conclusión** y explora más detalles en la sección de **Referencias**.
 
-Esperamos que encuentres este tutorial fácil de seguir y que mejore tu experiencia en el aprendizaje de Python.
+Espero que encuentres este tutorial fácil de seguir y que mejore tu experiencia en el aprendizaje de Python.
 
-¡Feliz programación!
+
