@@ -1,44 +1,81 @@
-# Python Data Structures (Section 04)
+# Estructuras de Datos en Python (Sección 04)
 
-This section covers Python's built-in data structures and their operations.
+Esta sección cubre las estructuras de datos incorporadas en Python y sus operaciones.
 
-## Directory Structure 
+## Descripción del Código
 
-## Codes Overview
-- **list_operations.py**: Demonstrates various list operations including creation, indexing, and slicing.
-- **tuple_example.py**: Shows how to create and manipulate tuples, highlighting their immutability.
-- **dictionary_methods.py**: Provides examples of dictionary methods such as `get()`, `keys()`, and `values()`.
-- **set_operations.py**: Illustrates set operations including union, intersection, and difference.
-- **comprehensions.py**: Contains examples of list and dictionary comprehensions for efficient data manipulation.
+- **lists_example.py**: Muestra cómo crear, acceder y manipular listas en Python.
+- **tuples_example.py**: Explica cómo usar tuplas, destacando su inmutabilidad y casos prácticos.
+- **dictionaries_example.py**: Presenta el uso de diccionarios, incluyendo acceso seguro y métodos comunes.
+- **sets_example.py**: Demuestra cómo trabajar con conjuntos y realizar operaciones como unión e intersección.
+- **list_comprehension.py**: Contiene ejemplos avanzados de comprensión de listas y diccionarios para manipulación eficiente de datos.
 
-## Exercises Overview
-- **Exercise 1: Lists**  
-  This exercise covers the creation, manipulation, and common methods associated with Python lists.
+## Contenido de Esta Sección
 
-- **Exercise 2: Tuples**  
-  This exercise focuses on the immutability of tuples and how to use them effectively in Python.
+Incluye ejercicios prácticos y ejemplos que ilustran el uso de estructuras de datos en Python. Cada ejercicio está diseñado para reforzar los conceptos y proporcionar experiencia práctica.
 
-- **Exercise 3: Dictionaries**  
-  This exercise explores key-value pairs, dictionary methods, and practical use cases for dictionaries.
+## Objetivos de Aprendizaje
+1. Comprender y utilizar las estructuras de datos incorporadas en Python de manera efectiva.
+2. Realizar operaciones con listas, tuplas, diccionarios y conjuntos.
+3. Implementar comprensiones de listas y diccionarios para manipulación de datos.
+4. Aplicar estas estructuras en escenarios prácticos de programación.
 
-- **Exercise 4: Sets**  
-  This exercise introduces sets, their properties, and operations such as union, intersection, and difference.
+## Descripción Detallada del Código
 
-- **Exercise 5: Comprehensions**  
-  This exercise demonstrates list and dictionary comprehensions for concise and efficient data manipulation. 
+### lists_example.py
+Este archivo muestra cómo trabajar con **listas en Python**, incluyendo su creación, indexación, métodos y comprensión de listas.
 
-## Content of This Section
-This section includes practical exercises and examples that illustrate the use of Python's built-in data structures. Each exercise is designed to reinforce the concepts and provide hands-on experience.
+**Ejemplos de código:**
+```python
+numbers = [1, 2, 3, 4, 5]
+fruits = ["apple", "banana", "orange"]
+```
+```python
+squares = [x**2 for x in range(5)]
+```
 
-## Learning Objectives
-By the end of this section, you should be able to:
-1. Understand and utilize Python's built-in data structures effectively.
-2. Perform operations on lists, tuples, dictionaries, and sets.
-3. Implement list and dictionary comprehensions for data manipulation.
-4. Apply these data structures in practical programming scenarios.
+### tuples_example.py
+Este archivo explica cómo usar **tuplas en Python**, destacando su inmutabilidad y su uso práctico.
 
-## How to Run the Programs
-To run the programs in this section, follow these steps:
-1. Ensure you have Python installed on your machine.
-2. Navigate to the `04_data_structures` directory in your terminal.
-3. Use the command `python <filename>.py` to execute the desired program, replacing `<filename>` with the name of the specific file you want to run (e.g., `python list_operations.py`). 
+**Ejemplos de código:**
+```python
+coordinates = (10, 20)
+name, age, city = ("John", 25, "New York")
+```
+
+### dictionaries_example.py
+Este archivo muestra cómo crear y manipular **diccionarios en Python**, incluyendo el acceso seguro a claves y el uso de métodos comunes.
+
+**Ejemplos de código:**
+```python
+person = {"name": "John", "age": 30}
+print(person["name"])
+```
+```python
+squares = {x: x**2 for x in range(5)}
+```
+
+### sets_example.py
+Este archivo explica cómo trabajar con **conjuntos en Python**, incluyendo operaciones como unión, intersección y diferencia.
+
+**Ejemplos de código:**
+```python
+numbers = {1, 2, 3, 4, 5}
+union = set1 | set2
+```
+
+### list_comprehension.py
+Este archivo contiene ejemplos avanzados de **comprensión de listas y diccionarios**, mostrando cómo crear estructuras de datos complejas de forma concisa.
+
+**Ejemplos de código:**
+```python
+squares = [x**2 for x in range(5)]
+flattened = [num for row in matrix for num in row]
+```
+
+## Cómo Ejecutar los Programas
+
+Para ejecutar los programas en esta sección, sigue estos pasos:
+1. Asegúrate de tener Python instalado en tu máquina.
+2. Navega al directorio `04_data_structures` en tu terminal.
+3. Utiliza el comando `python <nombre_archivo>.py` para ejecutar el programa deseado, reemplazando `<nombre_archivo>` con el nombre del archivo específico (por ejemplo, `python lists_example.py`).
