@@ -1,36 +1,98 @@
-# Object-Oriented Programming in Python (Section 08)
+# Programación Orientada a Objetos en Python (Sección 08)
 
-This section covers object-oriented programming concepts and implementation.
+Esta sección cubre los conceptos de programación orientada a objetos (POO) y su implementación en Python.
 
-## Directory Structure 
+## Descripción del Código
 
-## List of Codes
-- **class_example.py**: Demonstrates the creation and usage of classes in Python.
-- **inheritance_example.py**: Shows how inheritance works in Python, including method overriding.
-- **polymorphism_example.py**: Illustrates polymorphism through method overloading and overriding.
-- **encapsulation_example.py**: Explains encapsulation and how to use private and public attributes.
+- **classes.py**: Introduce la creación y uso de clases y objetos, incluyendo métodos y atributos.
+- **encapsulation.py**: Muestra cómo implementar encapsulación para proteger datos internos de una clase.
+- **inheritance.py**: Demuestra cómo funciona la herencia, incluyendo herencia simple y múltiple.
+- **polymorphism.py**: Ilustra el polimorfismo mediante clases abstractas, sobrecarga de métodos y operadores.
 
-## Content of This Section
-In this section, we will explore the fundamental concepts of object-oriented programming (OOP) in Python, including:
-- Classes and Objects
-- Inheritance
-- Polymorphism
-- Encapsulation
-- Abstraction
+## Contenido de Esta Sección
 
-## Learning Objectives
-By the end of this section, you should be able to:
-1. Understand the principles of object-oriented programming.
-2. Create and use classes and objects in Python.
-3. Implement inheritance and polymorphism in your code.
-4. Apply encapsulation to protect data within your classes.
+En esta sección, exploraremos los conceptos fundamentales de la programación orientada a objetos, como:
+1. Clases y Objetos
+2. Encapsulación
+3. Herencia
+4. Polimorfismo
 
-## How to Run the Programs
-To run the programs in this section, follow these steps:
-1. Ensure you have Python installed on your machine.
-2. Navigate to the directory containing the code files.
-3. Use the command line to execute a program, for example:
+## Descripción Detallada del Código
+
+### classes.py
+Este archivo introduce la creación y uso de **clases y objetos en Python**.
+
+**Ejemplos de código:**
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+def introduce(self):
+    return f"Hi, I'm {self.name} and I'm {self.age} years old."
+```
+```python
+@staticmethod
+def is_adult(age):
+    return age >= 18
+```
+
+### encapsulation.py
+Este archivo muestra cómo implementar **encapsulación en Python**, protegiendo datos internos de una clase.
+
+**Ejemplos de código:**
+```python
+self._account_holder = account_holder  # Atributo protegido
+self.__balance = initial_balance       # Atributo privado
+```
+```python
+def deposit(self, amount):
+    self.__balance += amount
+```
+
+### inheritance.py
+Este archivo demuestra cómo funciona la **herencia en Python**, incluyendo la herencia simple y múltiple.
+
+**Ejemplos de código:**
+```python
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name, species="Dog")
+        self.breed = breed
+```
+```python
+def make_sound(self):
+    return "Woof!"
+```
+
+### polymorphism.py
+Este archivo ilustra el **polimorfismo en Python** mediante clases abstractas y sobrecarga de operadores.
+
+**Ejemplos de código:**
+```python
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+```
+```python
+def __add__(self, other):
+    return Vector(self.x + other.x, self.y + other.y)
+```
+```python
+def make_it_swim_and_sound(thing):
+    print(thing.make_sound())
+    print(thing.swim())
+```
+
+## Cómo Ejecutar los Programas
+
+1. Asegúrate de tener Python instalado en tu máquina.
+2. Navega al directorio que contiene los archivos de código.
+3. Utiliza la línea de comandos para ejecutar un programa específico. Por ejemplo:
    ```bash
-   python class_example.py
+   python classes.py
    ```
-4. Follow any additional instructions provided in the individual code files for specific usage. 
+4. Sigue las instrucciones proporcionadas en cada archivo para más detalles sobre su uso.
+
