@@ -1,51 +1,103 @@
-# Python Modules and Packages (Section 06)
+# Módulos y Paquetes en Python (Sección 06)
 
-This section covers module creation, importing, and package organization.
+Esta sección cubre la creación de módulos, importación y organización de paquetes en Python.
 
-## Directory Structure 
-{{ Add a brief description of the directory structure here }}
+## Descripción del Código
 
-## Codes and Descriptions
-- **module_name.py**: A simple module demonstrating basic functions.
-- **import_examples.py**: A script showcasing different import methods.
-- **package_structure/**: A directory containing files organized as a package.
-- **third_party_example.py**: A script that uses a third-party package.
-- **my_package/**: A directory containing the user-created package.
+- **my_module.py**: Demuestra cómo crear un módulo con funciones matemáticas básicas y una clase `Circle`.
+- **using_modules.py**: Muestra cómo importar y usar módulos estándar y personalizados.
+- **__init__.py**: Inicializa el paquete, haciendo accesibles las funciones y clases principales a nivel del paquete.
+- **main.py**: Define la funcionalidad principal del paquete, incluyendo la clase `Calculator` y una función de saludo.
+- **utils.py**: Proporciona funciones utilitarias para formatear cadenas y validar números.
 
-## Learning Objectives
-- Understand how to create and use Python modules.
-- Learn different methods of importing modules.
-- Organize Python files into packages effectively.
-- Utilize third-party packages using `pip`.
-- Create and test your own Python package.
+## Contenido de Esta Sección
 
-## How to Run the Programs
-1. Ensure you have Python installed on your machine.
-2. Navigate to the directory containing the scripts.
-3. Use the command `python module_name.py` to run the simple module.
-4. For import examples, run `python import_examples.py`.
-5. Follow the instructions in the `package_structure` directory to test the package.
-6. Install any third-party packages using `pip install package_name` before running `third_party_example.py`.
-7. To test your own package, follow the instructions provided in the `my_package` directory.
-  
-## Exercises
+Esta sección incluye ejemplos prácticos para comprender cómo crear, organizar y utilizar módulos y paquetes en Python.
 
-### Exercise 1: Creating a Simple Module
-**Description:** This exercise demonstrates how to create a simple Python module.  
-**Usage:** To use the module, import it in your Python script using `import module_name`.
+## Objetivos de Aprendizaje
+1. Crear y utilizar módulos en Python.
+2. Importar módulos estándar y personalizados.
+3. Organizar archivos Python en paquetes.
+4. Utilizar paquetes de terceros mediante `pip`.
+5. Crear y probar tu propio paquete de Python.
 
-### Exercise 2: Importing Modules
-**Description:** This exercise covers different ways to import modules in Python.  
-**Usage:** Run the provided script to see examples of `import`, `from ... import`, and `import as`.
+## Descripción Detallada del Código
 
-### Exercise 3: Package Organization
-**Description:** This exercise shows how to organize Python files into packages.  
-**Usage:** Follow the directory structure provided in the exercise to create a package and import it in your main script.
+### my_module.py
+Este archivo muestra cómo crear un **módulo personalizado en Python** con funciones, constantes y clases.
 
-### Exercise 4: Using Third-Party Packages
-**Description:** This exercise introduces the use of third-party packages with `pip`.  
-**Usage:** Install the package using `pip install package_name` and then import it in your script.
+**Ejemplos de código:**
+```python
+def add(a, b):
+    return a + b
 
-### Exercise 5: Creating a Package
-**Description:** This exercise guides you through creating your own package.  
-**Usage:** Follow the instructions to create a package and test it with a sample script. 
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+    def area(self):
+        return PI * self.radius ** 2
+```
+
+### using_modules.py
+Este archivo muestra cómo **importar y usar módulos estándar y personalizados** en Python.
+
+**Ejemplos de código:**
+```python
+import math
+print(math.sqrt(16))  # Resultado: 4.0
+
+import my_module
+print(my_module.add(10, 5))
+```
+
+### __init__.py
+Este archivo inicializa el paquete y **hace accesibles las funciones y clases principales** a nivel del paquete.
+
+**Contenido clave:**
+```python
+PACKAGE_VERSION = "1.0.0"
+AUTHOR = "Your Name"
+from .main import greet, Calculator
+from .utils import format_string
+```
+
+### main.py
+Este archivo define la **funcionalidad principal del paquete**.
+
+**Ejemplos de código:**
+```python
+def greet(name):
+    return f"Hello, {name}!"
+
+class Calculator:
+    @staticmethod
+    def add(a, b):
+        return a + b
+```
+
+### utils.py
+Este archivo proporciona **funciones utilitarias** para formatear cadenas y validar números.
+
+**Ejemplos de código:**
+```python
+def format_string(text, uppercase=False):
+    return text.upper() if uppercase else text.lower()
+
+def validate_number(number):
+    try:
+        float(number)
+        return True
+    except (TypeError, ValueError):
+        return False
+```
+
+## Cómo Ejecutar los Programas
+
+1. Asegúrate de tener Python instalado en tu máquina.
+2. Navega al directorio que contiene los archivos de código.
+3. Utiliza la línea de comandos para ejecutar un programa específico. Por ejemplo:
+   ```bash
+   python using_modules.py
+   ```
+4. Sigue las instrucciones proporcionadas en cada archivo para más detalles sobre su uso.
+
