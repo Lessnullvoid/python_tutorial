@@ -1,34 +1,92 @@
-# File Handling in Python (Section 07)
+# Manejo de Archivos en Python (Sección 07)
 
-This section covers file operations, including text, CSV, JSON, and exception handling.
+Esta sección cubre operaciones con archivos, incluyendo texto, CSV, JSON y manejo de excepciones.
 
-## Directory Structure 
+## Descripción del Código
 
-## List of Codes
-- **text_file_handling.py**: Demonstrates basic operations with text files, including reading, writing, and appending.
-- **csv_file_handling.py**: Shows how to read from and write to CSV files using the `csv` module.
-- **json_file_handling.py**: Illustrates how to work with JSON data, including serialization and deserialization.
-- **exception_handling.py**: Provides examples of handling exceptions that may occur during file operations.
+- **file_operations.py**: Muestra cómo realizar operaciones básicas de lectura, escritura y anexado en archivos de texto.
+- **csv_operations.py**: Demuestra cómo manejar archivos CSV utilizando el módulo `csv`.
+- **json_operations.py**: Ilustra cómo trabajar con datos JSON, incluyendo serialización y deserialización.
+- **exception_handling.py**: Proporciona ejemplos de manejo de excepciones para garantizar operaciones de archivo seguras.
 
-## Content of This Section
-In this section, you will learn how to:
-- Open and close files in Python.
-- Read and write text files.
-- Handle CSV and JSON file formats.
-- Implement exception handling to manage errors during file operations.
+## Contenido de Esta Sección
 
-## Learning Objectives
-By the end of this section, you should be able to:
-1. Understand the different modes of file operations in Python.
-2. Perform read and write operations on text, CSV, and JSON files.
-3. Implement error handling to ensure robust file operations.
+Aprenderás a:
+1. Abrir y cerrar archivos en Python.
+2. Leer y escribir archivos de texto, CSV y JSON.
+3. Implementar manejo de errores para asegurar operaciones robustas.
 
-## How to Run the Programs
-To run the programs in this section, follow these steps:
-1. Ensure you have Python installed on your machine.
-2. Navigate to the `07_file_handling` directory in your terminal.
-3. Run the desired script using the command:
+## Descripción Detallada del Código
+
+### file_operations.py
+Este archivo muestra cómo realizar **operaciones básicas de archivos en Python**.
+
+**Ejemplos de código:**
+```python
+with open("sample.txt", "w") as file:
+    file.write("Hello, this is line 1\n")
+```
+```python
+with open("sample.txt", "r") as file:
+    content = file.read()
+    print(content)
+```
+
+### csv_operations.py
+Este archivo demuestra cómo manejar **archivos CSV en Python** utilizando el módulo `csv`.
+
+**Ejemplos de código:**
+```python
+with open('people.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(sample_data)
+```
+```python
+with open('people.csv', 'r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
+```
+
+### json_operations.py
+Este archivo ilustra cómo trabajar con **archivos JSON en Python**.
+
+**Ejemplos de código:**
+```python
+with open('data.json', 'w') as file:
+    json.dump(sample_data, file, indent=4)
+```
+```python
+with open('data.json', 'r') as file:
+    data = json.load(file)
+    print(data)
+```
+
+### exception_handling.py
+Este archivo muestra cómo implementar **manejo de excepciones en operaciones de archivo**.
+
+**Ejemplos de código:**
+```python
+try:
+    with open("nonexistent.txt", "r") as file:
+        content = file.read()
+except FileNotFoundError:
+    print("Error: File does not exist")
+```
+```python
+try:
+    number = int("abc")
+except ValueError:
+    print("Error: Invalid number format")
+```
+
+## Cómo Ejecutar los Programas
+
+1. Asegúrate de tener Python instalado en tu máquina.
+2. Navega al directorio `07_file_handling` en tu terminal.
+3. Ejecuta el script deseado utilizando el comando:
    ```bash
    python <script_name>.py
    ```
-   Replace `<script_name>` with the name of the file you wish to execute (e.g., `text_file_handling.py`). 
+   Reemplaza `<script_name>` con el nombre del archivo que deseas ejecutar (por ejemplo, `file_operations.py`).
+
