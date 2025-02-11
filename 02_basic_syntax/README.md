@@ -1,46 +1,89 @@
-# Basic Python Syntax (Section 02)
+# Sintaxis Básica de Python (Sección 02)
 
-This section covers fundamental Python syntax and basic programming concepts.
+Esta sección cubre la sintaxis fundamental de Python y conceptos básicos de programación.
 
-## Directory Structure 
+## Estructura del Directorio 
 
-## Codes Overview
+## Descripción del Código
 
-- **variables.py**: Demonstrates variable declaration, assignment, and usage in Python.
-- **operators.py**: Illustrates arithmetic, comparison, and logical operators with examples.
-- **comments.py**: Shows how to write single-line and multi-line comments in Python.
-- **input_output.py**: Provides examples of using `input()` for user input and `print()` for output.
+- **variables.py**: Demuestra la declaración, asignación y uso de variables en Python.
+- **operators.py**: Ilustra el uso de operadores aritméticos, de comparación y lógicos con ejemplos.
+- **comments.py**: Muestra cómo escribir comentarios de una sola línea y de múltiples líneas en Python.
+- **input_output.py**: Proporciona ejemplos de cómo usar `input()` para entrada de usuario y `print()` para mostrar resultados.
 
-## Content of This Section
+## Contenido de Esta Sección
 
-This section includes exercises that help you understand the basic syntax of Python, including how to declare variables, use operators, write comments, and handle input/output operations.
+Esta sección incluye ejercicios que te ayudarán a comprender la sintaxis básica de Python, incluyendo cómo declarar variables, usar operadores, escribir comentarios y manejar operaciones de entrada/salida.
 
-## Learning Objectives
+## Objetivos de Aprendizaje
 
-By the end of this section, you should be able to:
-1. Declare and use variables in Python.
-2. Understand and apply different types of operators.
-3. Write effective comments in your code.
-4. Handle user input and output in Python programs.
+Al final de esta sección, deberías ser capaz de:
+1. Declarar y usar variables en Python.
+2. Comprender y aplicar diferentes tipos de operadores.
+3. Escribir comentarios efectivos en tu código.
+4. Manejar la entrada y salida de datos en programas de Python.
 
-## How to Run the Programs
+## Descripción Detallada del Código
 
-To run the programs in this section, follow these steps:
-1. Ensure you have Python installed on your machine.
-2. Open a terminal or command prompt.
-3. Navigate to the directory containing the Python files.
-4. Run a program using the command: `python filename.py`, replacing `filename.py` with the name of the file you want to execute (e.g., `python variables.py`).
+### variables.py
+Este archivo introduce el uso de **variables y tipos de datos en Python**. Incluye ejemplos sobre cómo declarar y asignar variables, así como verificar sus tipos.
 
-## Exercises
+**Ejemplos de código:**
+```python
+name = "John Doe"  # Cadena de texto
+age = 25           # Número entero
+height = 1.75      # Número flotante
+is_student = True  # Valor booleano
+```
 
-1. **Variables Exercise**: This exercise focuses on declaring and using variables in Python.
-   - **File**: `variables.py` - Contains examples of variable declaration, assignment, and usage in Python.
+### operators.py
+Este archivo muestra cómo utilizar **operadores en Python**, incluyendo operadores aritméticos, de comparación, lógicos y de asignación.
 
-2. **Operators Exercise**: This exercise covers different types of operators and their usage in expressions.
-   - **File**: `operators.py` - Demonstrates arithmetic, comparison, and logical operators with examples.
+**Ejemplos de código:**
+```python
+a = 10
+b = 3
+print(a + b, a - b, a * b, a / b, a % b)
+```
 
-3. **Comments Exercise**: This exercise demonstrates how to use comments effectively in Python code.
-   - **File**: `comments.py` - Shows how to write single-line and multi-line comments in Python.
+### comments.py
+Este archivo explica cómo escribir **comentarios en Python** para documentar y organizar el código.
 
-4. **Input/Output Exercise**: This exercise illustrates how to handle user input and output in Python.
-   - **File**: `input_output.py` - Provides examples of using `input()` for user input and `print()` for output. 
+**Ejemplos de código:**
+```python
+# Este es un comentario de una línea
+"""
+Este es un comentario de múltiples líneas
+que sirve como documentación.
+"""
+```
+
+### input_output.py
+Este archivo ilustra cómo manejar **entrada y salida en Python** utilizando `input()` para leer datos del usuario y `print()` para mostrar resultados.
+
+**Ejemplos de código:**
+```python
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+print(f"Hello, {name}! Next year, you will be {age + 1}.")
+```
+
+## Cómo Ejecutar los Programas
+
+Para ejecutar los programas en esta sección, sigue estos pasos:
+1. Asegúrate de tener Python instalado en tu máquina.
+2. Abre una terminal o consola de comandos.
+3. Navega al directorio que contiene los archivos Python.
+4. Ejecuta un programa con el comando: `python nombre_archivo.py`, reemplazando `nombre_archivo.py` con el nombre del archivo que deseas ejecutar (por ejemplo, `python variables.py`).
+
+## Ejercicios
+
+1. **Ejercicio de Variables**: Declara y usa variables en Python.
+   - **Archivo**: `variables.py`
+2. **Ejercicio de Operadores**: Practica el uso de operadores aritméticos, de comparación y lógicos.
+   - **Archivo**: `operators.py`
+3. **Ejercicio de Comentarios**: Aprende a escribir comentarios efectivos en tu código.
+   - **Archivo**: `comments.py`
+4. **Ejercicio de Entrada/Salida**: Maneja la entrada del usuario y muestra resultados formateados.
+   - **Archivo**: `input_output.py`
+
