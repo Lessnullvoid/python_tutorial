@@ -1,0 +1,12 @@
+# Required external packages for this project
+# Install using: pip install -r requirements.txt
+
+# Basic requirements
+datetime>=4.3
+math>=3.7
+random>=3.7
+
+# Additional packages (examples)
+numpy>=1.19.2
+pandas>=1.2.3
+requests>=2.25.1 
