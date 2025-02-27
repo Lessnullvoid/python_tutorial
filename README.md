@@ -101,3 +101,10 @@ deactivate
 
 Configurar un entorno virtual es una práctica esencial para garantizar que tus proyectos funcionen correctamente y evitar conflictos de versiones entre diferentes proyectos.
 
+
+---
+
+Para aprender a navegar en tu terminal utiliza el siguiente cheat sheet donde encontraras una lista completa de comandos para mac: https://github.com/0nn0/terminal-mac-cheatsheet/tree/master/Español
+
+Y para entornos en windowns: https://www.stationx.net/windows-command-line-cheat-sheet/
+
