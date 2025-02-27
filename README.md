@@ -1,4 +1,3 @@
-Bienvenido a la descripción general de nuestro **Tutorial de Python**. Este documento proporciona una explicación de alto nivel sobre el propósito del tutorial, su estructura y lo que puedes esperar aprender.
 
 ## Descripción General
 
