@@ -22,6 +22,33 @@ Esta seccion contiene proyectos practicos de Python que demuestran aplicaciones 
 - Obtener experiencia en la escritura de scripts para automatizacion.
 - Desarrollar habilidades de resolucion de problemas a traves de ejercicios practicos de codificacion.
 
+## Conceptos
+
+### Por que construir proyectos?
+
+Los proyectos son donde todo se une. Despues de aprender conceptos individuales (variables, bucles, funciones, clases, etc.), necesitas practicar combinandolos para resolver problemas reales. Los proyectos te ensenan:
+
+- Como dividir un problema grande en pasos mas pequenos.
+- Como estructurar codigo a traves de funciones y clases.
+- Como manejar la complejidad del mundo real (errores de entrada del usuario, archivos faltantes, fallos de red).
+- Como leer documentacion y usar bibliotecas de terceros.
+
+### Que combinan estos proyectos
+
+| Proyecto | Conceptos clave utilizados |
+|----------|---------------------------|
+| **File Organizer** | Manejo de archivos, diccionarios, bucles, modulo `os`, metodos de cadenas |
+| **Todo App** | Clases (POO), lectura/escritura JSON, listas, entrada del usuario, interfaz de linea de comandos |
+| **Weather App** | Solicitudes HTTP (llamadas a API), analisis JSON, manejo de excepciones, diccionarios |
+
+### Como abordar un proyecto
+
+1. **Entender el objetivo**: que deberia hacer el programa terminado?
+2. **Planificar la estructura**: que clases/funciones necesitaras?
+3. **Empezar pequeno**: haz que la version mas simple funcione primero.
+4. **Agregar funcionalidades**: expande paso a paso, probando cada adicion.
+5. **Manejar errores**: que puede salir mal? Agrega `try/except` para robustez.
+
 ## Descripcion Detallada del Codigo
 
 ### file_organizer.py

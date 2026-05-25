@@ -16,6 +16,79 @@ Esta seccion explora la definicion de funciones, argumentos y conceptos avanzado
 4. Crear y usar funciones lambda.
 5. Comprender el ambito de las variables locales y globales.
 
+## Conceptos
+
+### Que es una funcion?
+
+Una funcion es un bloque de codigo reutilizable que realiza una tarea especifica. En lugar de escribir el mismo codigo una y otra vez, lo defines una vez en una funcion y la llamas cada vez que la necesites.
+
+Piensa en ella como una receta con nombre: "hacer_cafe()" -- cada vez que la llamas, se ejecutan los mismos pasos.
+
+```python
+def greet(name):
+    return f"Hello, {name}!"
+```
+
+Las funciones te ayudan a organizar el codigo, evitar la repeticion y hacer que los programas sean mas faciles de entender y depurar.
+
+### Que son los parametros y argumentos?
+
+- **Parametros** son los nombres de variable en la definicion de la funcion (marcadores de posicion).
+- **Argumentos** son los valores reales que pasas al llamar a la funcion.
+
+```python
+def add(a, b):       # a y b son parametros
+    return a + b
+
+add(3, 5)            # 3 y 5 son argumentos
+```
+
+Python soporta varios tipos de argumentos:
+- **Posicionales**: se emparejan por orden
+- **Por palabra clave**: se emparejan por nombre (`add(a=3, b=5)`)
+- **Por defecto**: tienen un valor predeterminado (`def greet(name="World")`)
+- **Longitud variable**: `*args` (cualquier numero de posicionales) y `**kwargs` (cualquier numero de palabra clave)
+
+### Que es un valor de retorno?
+
+Una funcion puede enviar un resultado de vuelta al llamador usando `return`. Sin el, la funcion devuelve `None` por defecto.
+
+```python
+def square(x):
+    return x ** 2
+
+result = square(4)  # result es 16
+```
+
+Una funcion puede devolver multiples valores como una tupla: `return a, b, c`
+
+### Que es una funcion lambda?
+
+Una lambda es una funcion anonima pequena escrita en una sola linea. Es util para operaciones cortas que no necesitas nombrar.
+
+```python
+square = lambda x: x ** 2
+```
+
+Las lambdas se usan comunmente con `map()`, `filter()` y `sorted()` para transformaciones rapidas.
+
+### Que es el ambito de variables?
+
+El ambito determina donde es accesible una variable en tu codigo:
+
+- **Ambito local**: variables creadas dentro de una funcion existen solo dentro de esa funcion.
+- **Ambito global**: variables creadas fuera de todas las funciones son accesibles en todas partes.
+- **Palabra clave `global`**: te permite modificar una variable global desde dentro de una funcion.
+- **Palabra clave `nonlocal`**: permite que una funcion interna modifique una variable de su funcion envolvente.
+
+```python
+x = 10          # global
+
+def example():
+    y = 5       # local -- solo existe dentro de example()
+    print(x)    # puede LEER la x global
+```
+
 ## Descripcion Detallada del Codigo
 
 ### basic_functions.py

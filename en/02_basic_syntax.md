@@ -17,6 +17,64 @@ By the end of this section, you should be able to:
 3. Write effective comments in your code.
 4. Handle input and output in Python programs.
 
+## Concepts
+
+### What is a Variable?
+
+A variable is a named container that stores a value in your computer's memory. Think of it as a labeled box: you put something inside (a number, text, etc.) and later refer to it by name.
+
+In Python, you create a variable by simply assigning a value with `=`:
+
+```python
+age = 25
+name = "Alice"
+```
+
+You don't need to declare the type -- Python figures it out automatically.
+
+### What are Data Types?
+
+Every value in Python has a type that determines what you can do with it:
+
+- **int** -- whole numbers: `42`, `-7`, `0`
+- **float** -- decimal numbers: `3.14`, `-0.5`
+- **str** -- text (strings): `"hello"`, `'world'`
+- **bool** -- True or False values: `True`, `False`
+
+Python is dynamically typed, meaning a variable can change its type if you reassign it.
+
+### What are Operators?
+
+Operators are symbols that perform operations on values:
+
+- **Arithmetic**: `+`, `-`, `*`, `/`, `%` (remainder), `**` (power), `//` (integer division)
+- **Comparison**: `==`, `!=`, `>`, `<`, `>=`, `<=` -- these return True or False
+- **Logical**: `and`, `or`, `not` -- combine or invert boolean values
+- **Assignment**: `=`, `+=`, `-=`, `*=`, `/=` -- store or update values
+
+### What are Comments?
+
+Comments are notes in your code that Python ignores completely. They exist only for humans reading the code. Use them to explain WHY something is done (not what -- the code shows that).
+
+```python
+# single-line comment
+
+"""
+Multi-line comment (docstring)
+used for longer explanations.
+"""
+```
+
+### What is Input/Output?
+
+- **Output** (`print()`): displays information to the user on screen.
+- **Input** (`input()`): pauses the program and waits for the user to type something, then returns what they typed as a string.
+
+```python
+answer = input("What is your name? ")  # waits for user
+print(f"Hello, {answer}!")             # shows result
+```
+
 ## Detailed Code Description
 
 ### variables.py

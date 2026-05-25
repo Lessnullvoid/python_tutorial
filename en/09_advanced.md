@@ -15,6 +15,52 @@ In this section we will cover:
 2. **Context Managers**: Efficient resource management with `with`.
 3. **Generators and Iterators**: Creating sequences and data streams.
 
+## Concepts
+
+### What is a Decorator?
+
+A decorator is a function that takes another function as input and extends or modifies its behavior without changing its source code. It "wraps" the original function with additional logic.
+
+Think of it like gift wrapping: the gift (original function) stays the same, but the wrapper adds something extra (logging, timing, access control, etc.).
+
+```python
+@timer
+def slow_function():
+    ...
+```
+
+The `@timer` syntax is shorthand for: `slow_function = timer(slow_function)`. Decorators are widely used in web frameworks, testing, and performance monitoring.
+
+### What is a Context Manager?
+
+A context manager is an object that automatically sets up and tears down resources (files, database connections, locks, etc.). You use it with the `with` statement.
+
+```python
+with open("file.txt") as f:
+    data = f.read()
+# file is automatically closed here, even if an error occurred
+```
+
+Without a context manager, you would need to manually close resources and handle errors -- easy to forget and a common source of bugs.
+
+You can create your own by implementing `__enter__` and `__exit__` methods or by using `@contextmanager` from the `contextlib` module.
+
+### What is a Generator?
+
+A generator is a function that produces a sequence of values lazily -- one at a time, on demand -- instead of computing them all at once and storing them in memory. It uses `yield` instead of `return`.
+
+```python
+def count_up(n):
+    i = 0
+    while i < n:
+        yield i
+        i += 1
+```
+
+When you call a generator function, it doesn't run immediately. It returns a generator object that produces values one by one each time you ask for the next one (with `next()` or a `for` loop).
+
+Generators are essential when working with large datasets or infinite sequences because they only use memory for one value at a time.
+
 ## Detailed Code Description
 
 ### context_managers.py

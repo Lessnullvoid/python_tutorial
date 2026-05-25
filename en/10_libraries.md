@@ -23,6 +23,38 @@ In this section we will cover:
 6. Classification and clustering with **scikit-learn**.
 7. Database management with **SQLAlchemy**.
 
+## Concepts
+
+### What is a Library?
+
+A library (also called a package) is a collection of pre-written code that solves common problems, so you don't have to build everything from scratch. Python's ecosystem has thousands of libraries for nearly every domain.
+
+Installing a library is done with `pip install library_name`, and using it requires an `import` statement.
+
+### Why Use Libraries?
+
+Real-world programs rarely start from zero. Libraries give you tested, optimized solutions for:
+- Visualizing data (Matplotlib)
+- Numerical computation (NumPy)
+- Data analysis (Pandas)
+- Machine learning (scikit-learn, PyTorch)
+- Talking to web APIs (Requests)
+- Working with databases (SQLAlchemy)
+
+Learning to choose and use the right library is one of the most valuable programming skills.
+
+### Quick Overview of Each Library
+
+| Library | What it does | Typical use case |
+|---------|-------------|------------------|
+| **Matplotlib** | Creates charts and plots | Visualize trends, compare data |
+| **NumPy** | Fast math on arrays of numbers | Scientific computing, matrix operations |
+| **Pandas** | Tabular data manipulation | Clean, filter, and analyze CSV/Excel data |
+| **PyTorch** | Build and train neural networks | Image recognition, NLP, AI research |
+| **Requests** | Send HTTP requests | Fetch data from web APIs |
+| **scikit-learn** | Classical machine learning | Classification, clustering, prediction |
+| **SQLAlchemy** | Database interaction via Python objects | Store and query structured data |
+
 ## Detailed Code Description
 
 ### matplotlib_examples.py

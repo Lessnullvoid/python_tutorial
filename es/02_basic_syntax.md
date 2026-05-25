@@ -17,6 +17,64 @@ Al final de esta seccion, deberas ser capaz de:
 3. Escribir comentarios efectivos en tu codigo.
 4. Manejar la entrada y salida de datos en programas de Python.
 
+## Conceptos
+
+### Que es una variable?
+
+Una variable es un contenedor con nombre que almacena un valor en la memoria de tu computadora. Piensa en ella como una caja etiquetada: guardas algo dentro (un numero, texto, etc.) y luego te refieres a ella por su nombre.
+
+En Python, creas una variable simplemente asignando un valor con `=`:
+
+```python
+age = 25
+name = "Alice"
+```
+
+No necesitas declarar el tipo -- Python lo determina automaticamente.
+
+### Que son los tipos de datos?
+
+Cada valor en Python tiene un tipo que determina que puedes hacer con el:
+
+- **int** -- numeros enteros: `42`, `-7`, `0`
+- **float** -- numeros decimales: `3.14`, `-0.5`
+- **str** -- texto (cadenas): `"hola"`, `'mundo'`
+- **bool** -- valores Verdadero o Falso: `True`, `False`
+
+Python es de tipado dinamico, lo que significa que una variable puede cambiar su tipo si le asignas un nuevo valor.
+
+### Que son los operadores?
+
+Los operadores son simbolos que realizan operaciones sobre valores:
+
+- **Aritmeticos**: `+`, `-`, `*`, `/`, `%` (resto), `**` (potencia), `//` (division entera)
+- **Comparacion**: `==`, `!=`, `>`, `<`, `>=`, `<=` -- devuelven True o False
+- **Logicos**: `and`, `or`, `not` -- combinan o invierten valores booleanos
+- **Asignacion**: `=`, `+=`, `-=`, `*=`, `/=` -- almacenan o actualizan valores
+
+### Que son los comentarios?
+
+Los comentarios son notas en tu codigo que Python ignora completamente. Existen solo para las personas que leen el codigo. Usalos para explicar POR QUE se hace algo (no que -- el codigo ya lo muestra).
+
+```python
+# comentario de una linea
+
+"""
+Comentario de multiples lineas (docstring)
+usado para explicaciones mas largas.
+"""
+```
+
+### Que es la entrada/salida?
+
+- **Salida** (`print()`): muestra informacion al usuario en pantalla.
+- **Entrada** (`input()`): pausa el programa y espera a que el usuario escriba algo, luego devuelve lo que escribio como una cadena de texto.
+
+```python
+answer = input("Como te llamas? ")  # espera al usuario
+print(f"Hola, {answer}!")           # muestra el resultado
+```
+
 ## Descripcion Detallada del Codigo
 
 ### variables.py

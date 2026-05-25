@@ -16,6 +16,66 @@ Esta seccion cubre las estructuras de datos incorporadas en Python y sus operaci
 3. Implementar comprensiones de listas y diccionarios para manipulacion de datos.
 4. Aplicar estas estructuras en escenarios practicos de programacion.
 
+## Conceptos
+
+### Que es una estructura de datos?
+
+Una estructura de datos es una forma de organizar y almacenar multiples datos para que puedas acceder a ellos y modificarlos de manera eficiente. En lugar de crear variables separadas para 100 elementos, los colocas en una sola estructura.
+
+### Que es una lista?
+
+Una lista es una coleccion ordenada y mutable de elementos. "Ordenada" significa que los elementos mantienen su posicion. "Mutable" significa que puedes agregar, eliminar o cambiar elementos despues de crear la lista.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")  # agregar al final
+fruits[0]                 # acceder por posicion: "apple"
+```
+
+Usa listas cuando tengas una secuencia de elementos que podrian cambiar.
+
+### Que es una tupla?
+
+Una tupla es como una lista, pero **inmutable** -- una vez creada, no puedes cambiar su contenido. Esto hace que las tuplas sean utiles para datos que no deben ser modificados accidentalmente.
+
+```python
+coordinates = (10, 20)
+name, age = ("Alice", 25)  # desempaquetado
+```
+
+Usa tuplas para colecciones fijas como coordenadas, colores RGB, o para devolver multiples valores desde una funcion.
+
+### Que es un diccionario?
+
+Un diccionario almacena datos como **pares clave-valor**. En lugar de acceder a los elementos por posicion (indice), accedes a ellos por un nombre de clave unico.
+
+```python
+person = {"name": "Alice", "age": 25, "city": "Berlin"}
+person["name"]  # "Alice"
+```
+
+Piensa en el como un diccionario real: buscas una palabra (clave) para encontrar su definicion (valor). Usa diccionarios cuando quieras etiquetar y buscar datos rapidamente.
+
+### Que es un conjunto (set)?
+
+Un conjunto es una coleccion desordenada de elementos **unicos**. Elimina automaticamente los duplicados y soporta operaciones matematicas como union e interseccion.
+
+```python
+colors = {"red", "green", "blue", "red"}  # se convierte en {"red", "green", "blue"}
+```
+
+Usa conjuntos cuando necesites eliminar duplicados o realizar pruebas de pertenencia rapidamente.
+
+### Que es una comprension de lista?
+
+Una comprension de lista es una forma concisa de crear una nueva lista aplicando una expresion a cada elemento en una secuencia existente, todo en una sola linea:
+
+```python
+squares = [x**2 for x in range(5)]  # [0, 1, 4, 9, 16]
+```
+
+Reemplaza el patron de: crear lista vacia, iterar, agregar -- haciendo tu codigo mas corto y legible.
+
 ## Descripcion Detallada del Codigo
 
 ### lists_example.py

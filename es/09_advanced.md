@@ -15,6 +15,52 @@ En esta seccion cubriremos:
 2. **Administradores de Contexto**: Gestion eficiente de recursos con `with`.
 3. **Generadores e Iteradores**: Creacion de secuencias y flujos de datos.
 
+## Conceptos
+
+### Que es un decorador?
+
+Un decorador es una funcion que toma otra funcion como entrada y extiende o modifica su comportamiento sin cambiar su codigo fuente. "Envuelve" la funcion original con logica adicional.
+
+Piensa en ello como envolver un regalo: el regalo (funcion original) permanece igual, pero el envoltorio agrega algo extra (registro, medicion de tiempo, control de acceso, etc.).
+
+```python
+@timer
+def slow_function():
+    ...
+```
+
+La sintaxis `@timer` es una forma abreviada de: `slow_function = timer(slow_function)`. Los decoradores se usan ampliamente en frameworks web, testing y monitoreo de rendimiento.
+
+### Que es un administrador de contexto?
+
+Un administrador de contexto es un objeto que automaticamente prepara y limpia recursos (archivos, conexiones a bases de datos, bloqueos, etc.). Lo usas con la declaracion `with`.
+
+```python
+with open("archivo.txt") as f:
+    data = f.read()
+# el archivo se cierra automaticamente aqui, incluso si ocurrio un error
+```
+
+Sin un administrador de contexto, necesitarias cerrar manualmente los recursos y manejar errores -- facil de olvidar y una fuente comun de bugs.
+
+Puedes crear los tuyos implementando los metodos `__enter__` y `__exit__` o usando `@contextmanager` del modulo `contextlib`.
+
+### Que es un generador?
+
+Un generador es una funcion que produce una secuencia de valores de forma perezosa -- uno a la vez, bajo demanda -- en lugar de calcularlos todos de una vez y almacenarlos en memoria. Usa `yield` en lugar de `return`.
+
+```python
+def count_up(n):
+    i = 0
+    while i < n:
+        yield i
+        i += 1
+```
+
+Cuando llamas a una funcion generadora, no se ejecuta inmediatamente. Devuelve un objeto generador que produce valores uno por uno cada vez que pides el siguiente (con `next()` o un bucle `for`).
+
+Los generadores son esenciales cuando trabajas con conjuntos de datos grandes o secuencias infinitas porque solo usan memoria para un valor a la vez.
+
 ## Descripcion Detallada del Codigo
 
 ### context_managers.py

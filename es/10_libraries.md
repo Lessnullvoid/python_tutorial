@@ -23,6 +23,38 @@ En esta seccion cubriremos:
 6. Clasificacion y agrupamiento con **scikit-learn**.
 7. Manejo de bases de datos con **SQLAlchemy**.
 
+## Conceptos
+
+### Que es una biblioteca?
+
+Una biblioteca (tambien llamada paquete) es una coleccion de codigo pre-escrito que resuelve problemas comunes, para que no tengas que construir todo desde cero. El ecosistema de Python tiene miles de bibliotecas para casi cualquier dominio.
+
+Instalar una biblioteca se hace con `pip install nombre_biblioteca`, y usarla requiere una declaracion `import`.
+
+### Por que usar bibliotecas?
+
+Los programas del mundo real raramente empiezan desde cero. Las bibliotecas te dan soluciones probadas y optimizadas para:
+- Visualizar datos (Matplotlib)
+- Computacion numerica (NumPy)
+- Analisis de datos (Pandas)
+- Aprendizaje automatico (scikit-learn, PyTorch)
+- Comunicarse con APIs web (Requests)
+- Trabajar con bases de datos (SQLAlchemy)
+
+Aprender a elegir y usar la biblioteca correcta es una de las habilidades de programacion mas valiosas.
+
+### Vista rapida de cada biblioteca
+
+| Biblioteca | Que hace | Caso de uso tipico |
+|------------|----------|-------------------|
+| **Matplotlib** | Crea graficos y plots | Visualizar tendencias, comparar datos |
+| **NumPy** | Matematicas rapidas con arrays de numeros | Computacion cientifica, operaciones matriciales |
+| **Pandas** | Manipulacion de datos tabulares | Limpiar, filtrar y analizar datos CSV/Excel |
+| **PyTorch** | Construir y entrenar redes neuronales | Reconocimiento de imagenes, NLP, investigacion en IA |
+| **Requests** | Enviar solicitudes HTTP | Obtener datos de APIs web |
+| **scikit-learn** | Aprendizaje automatico clasico | Clasificacion, agrupamiento, prediccion |
+| **SQLAlchemy** | Interaccion con bases de datos via objetos Python | Almacenar y consultar datos estructurados |
+
 ## Descripcion Detallada del Codigo
 
 ### matplotlib_examples.py

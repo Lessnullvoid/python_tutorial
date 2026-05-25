@@ -17,6 +17,71 @@ In this section, we will explore the fundamental concepts of object-oriented pro
 3. Inheritance
 4. Polymorphism
 
+## Concepts
+
+### What is Object-Oriented Programming?
+
+Object-Oriented Programming (OOP) is a way of organizing code around "objects" -- things that combine data and behavior together. Instead of having separate variables and functions scattered around, you group related data and the functions that operate on that data into a single unit.
+
+Think of it like modeling the real world: a "Car" object has data (color, speed, fuel level) and behaviors (accelerate, brake, refuel).
+
+### What is a Class?
+
+A class is a blueprint or template for creating objects. It defines what data (attributes) and behaviors (methods) the objects will have.
+
+```python
+class Dog:
+    def __init__(self, name, breed):
+        self.name = name      # attribute
+        self.breed = breed    # attribute
+
+    def bark(self):           # method
+        return "Woof!"
+```
+
+### What is an Object?
+
+An object is a specific instance created from a class. You can create many objects from the same class, each with different data.
+
+```python
+my_dog = Dog("Rex", "Labrador")   # object 1
+your_dog = Dog("Luna", "Poodle")  # object 2
+```
+
+### What is Encapsulation?
+
+Encapsulation means hiding a class's internal data and only exposing what's necessary through methods. This protects data from being changed accidentally.
+
+- `_name` -- convention for "protected" (should not be accessed directly from outside)
+- `__name` -- "private" (Python makes it harder to access from outside)
+
+Think of it like a bank account: you can't directly change the balance; you must use deposit() or withdraw() which enforce rules.
+
+### What is Inheritance?
+
+Inheritance lets a new class (child) reuse the code of an existing class (parent). The child gets all the parent's attributes and methods, and can add or override them.
+
+```python
+class Animal:         # parent
+    def speak(self):
+        pass
+
+class Cat(Animal):    # child inherits from Animal
+    def speak(self):
+        return "Meow!"
+```
+
+This avoids duplicating code when multiple classes share common behavior.
+
+### What is Polymorphism?
+
+Polymorphism means "many forms" -- different classes can have methods with the same name that behave differently. This lets you write code that works with any object that has the expected method, regardless of its specific class.
+
+```python
+for animal in [Cat(), Dog(), Duck()]:
+    print(animal.speak())  # each responds differently
+```
+
 ## Detailed Code Description
 
 ### classes.py

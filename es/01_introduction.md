@@ -12,6 +12,43 @@ Esta seccion cubre los conceptos basicos de la programacion en Python.
 - Comprender las declaraciones basicas de `print`
 - Aprender a mostrar cadenas de texto con formato basico
 
+## Conceptos
+
+### Que es Python?
+
+Python es un lenguaje de programacion de alto nivel disenado para ser facil de leer y escribir. Es uno de los lenguajes mas populares del mundo, utilizado en desarrollo web, ciencia de datos, inteligencia artificial, automatizacion y mucho mas. Su sintaxis simple lo convierte en una excelente opcion para principiantes.
+
+### Que es un programa?
+
+Un programa es un conjunto de instrucciones que le dice a la computadora que hacer, paso a paso. Cuando escribes un programa en Python, estas escribiendo esas instrucciones en un lenguaje que la computadora puede entender (despues de que Python las traduce).
+
+Piensa en ello como una receta de cocina: cada linea es un paso, y la computadora los sigue en orden de arriba hacia abajo.
+
+### Que es `print()`?
+
+`print()` es una funcion integrada que muestra informacion en la pantalla (la terminal/consola). Es la forma mas basica de ver el resultado de tu programa.
+
+Sintaxis:
+
+```python
+print("texto que quieres mostrar")
+print(42)       # tambien puedes imprimir numeros
+print(True)     # o valores booleanos
+```
+
+### Que son los f-strings?
+
+Un f-string (cadena formateada) te permite insertar variables directamente dentro de una cadena de texto. Se coloca el prefijo `f` antes de la cadena y los nombres de variables dentro de llaves `{}`.
+
+Sintaxis:
+
+```python
+name = "Alice"
+print(f"Hello, {name}!")  # Salida: Hello, Alice!
+```
+
+Esto evita la concatenacion complicada de cadenas y hace que tu salida sea mas legible.
+
 ## Como Ejecutar el Programa
 1. Abre tu terminal.
 2. Navega al directorio del proyecto.

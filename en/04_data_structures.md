@@ -16,6 +16,66 @@ This section covers Python's built-in data structures and their operations.
 3. Implement list and dictionary comprehensions for data manipulation.
 4. Apply these structures in practical programming scenarios.
 
+## Concepts
+
+### What is a Data Structure?
+
+A data structure is a way of organizing and storing multiple pieces of data so you can access and modify them efficiently. Instead of creating separate variables for 100 items, you put them in a single structure.
+
+### What is a List?
+
+A list is an ordered, mutable collection of items. "Ordered" means items keep their position. "Mutable" means you can add, remove, or change items after creating the list.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")  # add to the end
+fruits[0]                 # access by position: "apple"
+```
+
+Use lists when you have a sequence of items that might change.
+
+### What is a Tuple?
+
+A tuple is like a list, but **immutable** -- once created, you cannot change its contents. This makes tuples useful for data that should not be accidentally modified.
+
+```python
+coordinates = (10, 20)
+name, age = ("Alice", 25)  # unpacking
+```
+
+Use tuples for fixed collections like coordinates, RGB colors, or returning multiple values from a function.
+
+### What is a Dictionary?
+
+A dictionary stores data as **key-value pairs**. Instead of accessing items by position (index), you access them by a unique key name.
+
+```python
+person = {"name": "Alice", "age": 25, "city": "Berlin"}
+person["name"]  # "Alice"
+```
+
+Think of it like a real dictionary: you look up a word (key) to find its definition (value). Use dictionaries when you want to label and quickly look up data.
+
+### What is a Set?
+
+A set is an unordered collection of **unique** items. It automatically removes duplicates and supports mathematical operations like union and intersection.
+
+```python
+colors = {"red", "green", "blue", "red"}  # becomes {"red", "green", "blue"}
+```
+
+Use sets when you need to eliminate duplicates or perform membership tests quickly.
+
+### What is a List Comprehension?
+
+A list comprehension is a concise way to create a new list by applying an expression to each item in an existing sequence, all in a single line:
+
+```python
+squares = [x**2 for x in range(5)]  # [0, 1, 4, 9, 16]
+```
+
+It replaces the pattern of: create empty list, loop, append -- making your code shorter and more readable.
+
 ## Detailed Code Description
 
 ### lists_example.py

@@ -22,6 +22,33 @@ This section contains practical Python projects that demonstrate real-world appl
 - Gain experience writing scripts for automation.
 - Develop problem-solving skills through practical coding exercises.
 
+## Concepts
+
+### Why Build Projects?
+
+Projects are where everything comes together. After learning individual concepts (variables, loops, functions, classes, etc.), you need to practice combining them to solve real problems. Projects teach you:
+
+- How to break a large problem into smaller steps.
+- How to structure code across functions and classes.
+- How to handle real-world messiness (user input errors, missing files, network failures).
+- How to read documentation and use third-party libraries.
+
+### What These Projects Combine
+
+| Project | Key concepts used |
+|---------|-------------------|
+| **File Organizer** | File handling, dictionaries, loops, `os` module, string methods |
+| **Todo App** | Classes (OOP), JSON file I/O, lists, user input, command-line interface |
+| **Weather App** | HTTP requests (API calls), JSON parsing, exception handling, dictionaries |
+
+### How to Approach a Project
+
+1. **Understand the goal**: what should the finished program do?
+2. **Plan the structure**: what classes/functions will you need?
+3. **Start small**: get the simplest version working first.
+4. **Add features**: expand step by step, testing each addition.
+5. **Handle errors**: what can go wrong? Add `try/except` for robustness.
+
 ## Detailed Code Description
 
 ### file_organizer.py

@@ -18,6 +18,59 @@ Esta seccion cubre la creacion de modulos, importacion y organizacion de paquete
 4. Utilizar paquetes de terceros mediante `pip`.
 5. Crear y probar tu propio paquete de Python.
 
+## Conceptos
+
+### Que es un modulo?
+
+Un modulo es simplemente un archivo `.py` que contiene codigo Python (funciones, clases, variables). Al poner codigo relacionado en un modulo, puedes reutilizarlo en multiples programas sin copiar y pegar.
+
+```python
+import math          # modulo integrado
+print(math.sqrt(16)) # usar sus funciones
+```
+
+Piensa en los modulos como cajas de herramientas: en lugar de construir cada herramienta desde cero, tomas la caja que tiene lo que necesitas.
+
+### Por que usar modulos?
+
+- **Reutilizacion**: escribe una vez, usa en todas partes.
+- **Organizacion**: mantiene funciones relacionadas juntas en un archivo.
+- **Aislamiento de nombres**: evita conflictos de nombres entre diferentes partes de tu codigo.
+- **Colaboracion**: diferentes miembros del equipo pueden trabajar en diferentes modulos.
+
+### Que es importar?
+
+Importar trae codigo de un modulo a tu programa actual. Python ofrece varias formas:
+
+```python
+import math                  # importar modulo completo
+from math import sqrt        # importar funcion especifica
+from math import sqrt as s   # importar con alias
+import my_module             # importar tu propio archivo
+```
+
+### Que es un paquete?
+
+Un paquete es una carpeta que contiene multiples modulos relacionados, mas un archivo especial `__init__.py` que le dice a Python "esta carpeta es un paquete."
+
+```
+mi_paquete/
+    __init__.py
+    modulo_a.py
+    modulo_b.py
+```
+
+Los paquetes te permiten organizar proyectos grandes en grupos logicos. Importas de ellos con notacion de punto: `from mi_paquete import modulo_a`.
+
+### Que es pip?
+
+`pip` es el gestor de paquetes de Python. Descarga e instala paquetes de terceros desde el Python Package Index (PyPI) -- un vasto repositorio de bibliotecas creadas por la comunidad.
+
+```bash
+pip install requests    # instalar un paquete
+pip list                # ver paquetes instalados
+```
+
 ## Descripcion Detallada del Codigo
 
 ### my_module.py

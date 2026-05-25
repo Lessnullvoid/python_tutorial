@@ -16,6 +16,68 @@ You will learn how to:
 2. Read and write text, CSV, and JSON files.
 3. Implement error handling to ensure robust operations.
 
+## Concepts
+
+### What is a File?
+
+A file is a named location on your disk that stores data permanently. Unlike variables (which disappear when your program ends), files persist after the program closes. Programs read files to get data and write files to save results.
+
+### What is Reading and Writing?
+
+- **Reading**: opening a file and loading its contents into your program.
+- **Writing**: creating or overwriting a file with new content.
+- **Appending**: adding content to the end of an existing file without erasing what was there.
+
+Python uses the `open()` function with mode flags:
+
+```python
+open("file.txt", "r")   # read
+open("file.txt", "w")   # write (overwrites!)
+open("file.txt", "a")   # append
+```
+
+The `with` statement ensures the file is properly closed when you're done:
+
+```python
+with open("file.txt", "r") as f:
+    content = f.read()
+```
+
+### What is CSV?
+
+CSV (Comma-Separated Values) is a simple file format for tabular data (like a spreadsheet). Each line is a row, and values in each row are separated by commas.
+
+```
+name,age,city
+Alice,25,Berlin
+Bob,30,Madrid
+```
+
+Python's built-in `csv` module makes it easy to read and write these files.
+
+### What is JSON?
+
+JSON (JavaScript Object Notation) is a lightweight format for storing structured data. It looks like Python dictionaries and lists, making it intuitive to work with.
+
+```json
+{"name": "Alice", "age": 25, "hobbies": ["reading", "coding"]}
+```
+
+Python's `json` module converts between Python objects and JSON strings (serialization/deserialization).
+
+### What is an Exception?
+
+An exception is an error that occurs while your program is running (not a typo in your code, but something unexpected like a missing file or invalid input). Instead of crashing, you can "catch" exceptions and handle them gracefully:
+
+```python
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+```
+
+This is essential for file operations because files might not exist, might be locked, or might contain unexpected data.
+
 ## Detailed Code Description
 
 ### file_operations.py

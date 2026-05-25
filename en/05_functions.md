@@ -16,6 +16,79 @@ This section explores function definition, arguments, and advanced function conc
 4. Create and use lambda functions.
 5. Understand the scope of local and global variables.
 
+## Concepts
+
+### What is a Function?
+
+A function is a reusable block of code that performs a specific task. Instead of writing the same code over and over, you define it once in a function and call it whenever you need it.
+
+Think of it like a recipe with a name: "make_coffee()" -- every time you call it, the same steps execute.
+
+```python
+def greet(name):
+    return f"Hello, {name}!"
+```
+
+Functions help you organize code, avoid repetition, and make programs easier to understand and debug.
+
+### What are Parameters and Arguments?
+
+- **Parameters** are the variable names in the function definition (placeholders).
+- **Arguments** are the actual values you pass when calling the function.
+
+```python
+def add(a, b):       # a and b are parameters
+    return a + b
+
+add(3, 5)            # 3 and 5 are arguments
+```
+
+Python supports several argument types:
+- **Positional**: matched by order
+- **Keyword**: matched by name (`add(a=3, b=5)`)
+- **Default**: have a fallback value (`def greet(name="World")`)
+- **Variable-length**: `*args` (any number of positional) and `**kwargs` (any number of keyword)
+
+### What is a Return Value?
+
+A function can send a result back to the caller using `return`. Without it, the function returns `None` by default.
+
+```python
+def square(x):
+    return x ** 2
+
+result = square(4)  # result is 16
+```
+
+A function can return multiple values as a tuple: `return a, b, c`
+
+### What is a Lambda Function?
+
+A lambda is a small anonymous function written in a single line. It is useful for short operations you don't need to name.
+
+```python
+square = lambda x: x ** 2
+```
+
+Lambdas are commonly used with `map()`, `filter()`, and `sorted()` for quick transformations.
+
+### What is Variable Scope?
+
+Scope determines where a variable is accessible in your code:
+
+- **Local scope**: variables created inside a function exist only within that function.
+- **Global scope**: variables created outside all functions are accessible everywhere.
+- **`global`** keyword: lets you modify a global variable from inside a function.
+- **`nonlocal`** keyword: lets an inner function modify a variable from its enclosing function.
+
+```python
+x = 10          # global
+
+def example():
+    y = 5       # local -- only exists inside example()
+    print(x)    # can READ global x
+```
+
 ## Detailed Code Description
 
 ### basic_functions.py

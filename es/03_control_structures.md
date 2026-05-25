@@ -13,6 +13,58 @@ Esta seccion cubre los mecanismos de control de flujo en Python, incluyendo cond
 - Aprender a controlar la ejecucion de bucles con declaraciones como `break`, `continue` y `pass`.
 - Adquirir destreza en el uso de declaraciones condicionales para tomar decisiones en el codigo.
 
+## Conceptos
+
+### Que es el control de flujo?
+
+Por defecto, Python ejecuta tu codigo linea por linea de arriba hacia abajo. El control de flujo te permite cambiar esto: puedes saltar lineas, repetir lineas o elegir entre diferentes caminos. Los condicionales y los bucles son las dos herramientas principales para el control de flujo.
+
+### Que es un condicional?
+
+Un condicional permite que tu programa tome decisiones. En lugar de ejecutar cada linea, el programa verifica una condicion y elige que camino seguir.
+
+Piensa en ello como una bifurcacion en el camino: "Si esta lloviendo, lleva un paraguas. De lo contrario, usa lentes de sol."
+
+En Python, escribes condicionales con `if`, `elif` y `else`:
+
+```python
+if condicion:
+    # se ejecuta solo cuando condicion es True
+elif otra_condicion:
+    # se ejecuta si la primera fue False pero esta es True
+else:
+    # se ejecuta cuando ninguna de las anteriores fue True
+```
+
+El bloque indentado debajo de cada palabra clave es lo que se ejecuta para esa rama. Solo UNA rama se ejecuta.
+
+### Que es un bucle?
+
+Un bucle repite un bloque de codigo multiples veces. En lugar de escribir la misma instruccion 100 veces, la escribes una vez dentro de un bucle.
+
+Python tiene dos tipos de bucles:
+
+- **bucle for** -- se repite una vez por cada elemento en una secuencia (una lista, un rango de numeros, etc.)
+- **bucle while** -- se repite mientras una condicion siga siendo True
+
+```python
+for elemento in secuencia:
+    # hacer algo con elemento
+
+while condicion:
+    # hacer algo hasta que condicion sea False
+```
+
+Un bucle `for` es mejor cuando sabes cuantas veces repetir. Un bucle `while` es mejor cuando repites hasta que algo cambie.
+
+### Que es el control de bucles?
+
+A veces necesitas alterar el comportamiento de un bucle durante su ejecucion:
+
+- `break` -- detiene el bucle por completo y continua con el codigo despues de el
+- `continue` -- salta el resto de la iteracion actual y pasa a la siguiente
+- `pass` -- no hace nada (un marcador de posicion cuando la sintaxis requiere un cuerpo pero aun no tienes nada que hacer)
+
 ## Descripcion Detallada del Codigo
 
 ### conditionals.py

@@ -12,6 +12,43 @@ This section covers the basics of Python programming.
 - Understand basic `print` statements
 - Learn how to display formatted text strings
 
+## Concepts
+
+### What is Python?
+
+Python is a high-level programming language designed to be easy to read and write. It is one of the most popular languages in the world, used in web development, data science, artificial intelligence, automation, and more. Its simple syntax makes it an excellent choice for beginners.
+
+### What is a Program?
+
+A program is a set of instructions that tells a computer what to do, step by step. When you write a Python program, you are writing those instructions in a language the computer can understand (after Python translates them).
+
+Think of it like a recipe: each line is a step, and the computer follows them in order from top to bottom.
+
+### What is `print()`?
+
+`print()` is a built-in function that displays information on the screen (the terminal/console). It is the most basic way to see the output of your program.
+
+Syntax:
+
+```python
+print("text you want to display")
+print(42)       # you can print numbers too
+print(True)     # or boolean values
+```
+
+### What are f-strings?
+
+An f-string (formatted string) lets you embed variables directly inside a text string. You prefix the string with `f` and put variable names inside curly braces `{}`.
+
+Syntax:
+
+```python
+name = "Alice"
+print(f"Hello, {name}!")  # Output: Hello, Alice!
+```
+
+This avoids clumsy string concatenation and makes your output readable.
+
 ## How to Run the Program
 1. Open your terminal.
 2. Navigate to the project directory.

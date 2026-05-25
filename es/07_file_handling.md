@@ -16,6 +16,68 @@ Aprenderas a:
 2. Leer y escribir archivos de texto, CSV y JSON.
 3. Implementar manejo de errores para asegurar operaciones robustas.
 
+## Conceptos
+
+### Que es un archivo?
+
+Un archivo es una ubicacion con nombre en tu disco que almacena datos de forma permanente. A diferencia de las variables (que desaparecen cuando tu programa termina), los archivos persisten despues de cerrar el programa. Los programas leen archivos para obtener datos y escriben archivos para guardar resultados.
+
+### Que es leer y escribir?
+
+- **Leer**: abrir un archivo y cargar su contenido en tu programa.
+- **Escribir**: crear o sobrescribir un archivo con contenido nuevo.
+- **Anexar**: agregar contenido al final de un archivo existente sin borrar lo que habia.
+
+Python usa la funcion `open()` con indicadores de modo:
+
+```python
+open("archivo.txt", "r")   # leer
+open("archivo.txt", "w")   # escribir (sobrescribe!)
+open("archivo.txt", "a")   # anexar
+```
+
+La declaracion `with` asegura que el archivo se cierre correctamente al terminar:
+
+```python
+with open("archivo.txt", "r") as f:
+    content = f.read()
+```
+
+### Que es CSV?
+
+CSV (Comma-Separated Values / Valores Separados por Comas) es un formato simple de archivo para datos tabulares (como una hoja de calculo). Cada linea es una fila, y los valores en cada fila estan separados por comas.
+
+```
+nombre,edad,ciudad
+Alice,25,Berlin
+Bob,30,Madrid
+```
+
+El modulo integrado `csv` de Python facilita la lectura y escritura de estos archivos.
+
+### Que es JSON?
+
+JSON (JavaScript Object Notation) es un formato ligero para almacenar datos estructurados. Se parece a los diccionarios y listas de Python, lo que lo hace intuitivo para trabajar.
+
+```json
+{"name": "Alice", "age": 25, "hobbies": ["reading", "coding"]}
+```
+
+El modulo `json` de Python convierte entre objetos Python y cadenas JSON (serializacion/deserializacion).
+
+### Que es una excepcion?
+
+Una excepcion es un error que ocurre mientras tu programa se ejecuta (no un error de escritura en tu codigo, sino algo inesperado como un archivo faltante o entrada invalida). En lugar de que el programa se detenga, puedes "atrapar" excepciones y manejarlas de manera elegante:
+
+```python
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("No se puede dividir por cero!")
+```
+
+Esto es esencial para operaciones con archivos porque los archivos podrian no existir, estar bloqueados o contener datos inesperados.
+
 ## Descripcion Detallada del Codigo
 
 ### file_operations.py
