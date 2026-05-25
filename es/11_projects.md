@@ -98,10 +98,72 @@ data = app.get_weather("Mexico City")
 print(app.format_weather_data(data))
 ```
 
+## Configuracion
+
+### 1. Crear y activar un entorno virtual
+
+Un entorno virtual mantiene las dependencias de tu proyecto aisladas del resto de tu sistema.
+
+**MacOS / Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+**Windows:**
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+Deberias ver `(venv)` al inicio de tu terminal cuando el entorno este activo.
+
+### 2. Instalar dependencias
+
+Todas las bibliotecas necesarias estan listadas en `requirements.txt` en la raiz del proyecto. Instalalas con:
+
+```bash
+pip install -r requirements.txt
+```
+
+Esto instala paquetes como `requests`, `pandas`, `numpy`, etc. que los proyectos necesitan.
+
+> **Tip:** Si obtienes errores de permisos, asegurate de que tu entorno virtual este activo (paso 1). Nunca deberas usar `sudo` con un entorno virtual.
+
+### 3. Configurar claves API (Weather App)
+
+La Weather App requiere una clave API gratuita de OpenWeatherMap.
+
+1. Crea una cuenta gratuita en [openweathermap.org](https://openweathermap.org/).
+2. Ve a [My API Keys](https://home.openweathermap.org/api_keys) y copia tu clave (la cadena larga de caracteres, no el nombre).
+3. Crea un archivo `.env` dentro de la carpeta `11_projects/`:
+
+```bash
+echo "OPENWEATHER_API_KEY=tu_clave_api_aqui" > 11_projects/.env
+```
+
+Reemplaza `tu_clave_api_aqui` con la clave que copiaste.
+
+> **Importante:** Las claves API nuevas pueden tardar hasta 2 horas en activarse. Si obtienes un error 401 Unauthorized, espera e intenta de nuevo mas tarde.
+
+> **Importante:** Nunca subas tu archivo `.env` a git. El `.gitignore` en la raiz del proyecto ya lo excluye.
+
 ## Como Ejecutar los Programas
-1. Asegurate de tener Python instalado en tu maquina.
-2. Navega al directorio del proyecto en tu terminal.
-3. Ejecuta el script deseado utilizando el comando:
-   ```bash
-   python 11_projects/file_organizer.py
-   ```
+
+1. Asegurate de que tu entorno virtual este activo (deberias ver `(venv)` en tu terminal).
+2. Navega a la raiz del proyecto en tu terminal.
+3. Ejecuta el script deseado:
+
+```bash
+python 11_projects/file_organizer.py
+python 11_projects/todo_app.py
+python 11_projects/weather_app.py
+```
+
+### Desactivar el entorno virtual
+
+Cuando termines, desactiva el entorno virtual con:
+
+```bash
+deactivate
+```

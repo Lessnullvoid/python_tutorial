@@ -98,10 +98,72 @@ data = app.get_weather("Mexico City")
 print(app.format_weather_data(data))
 ```
 
+## Setup
+
+### 1. Create and activate a virtual environment
+
+A virtual environment keeps your project dependencies isolated from the rest of your system.
+
+**MacOS / Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+**Windows:**
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+You should see `(venv)` at the beginning of your terminal prompt when the environment is active.
+
+### 2. Install dependencies
+
+All required libraries are listed in `requirements.txt` at the project root. Install them with:
+
+```bash
+pip install -r requirements.txt
+```
+
+This installs packages like `requests`, `pandas`, `numpy`, etc. that the projects depend on.
+
+> **Tip:** If you get permission errors, make sure your virtual environment is active (step 1). You should never need `sudo` with a virtual environment.
+
+### 3. Set up API keys (Weather App)
+
+The Weather App requires a free API key from OpenWeatherMap.
+
+1. Create a free account at [openweathermap.org](https://openweathermap.org/).
+2. Go to [My API Keys](https://home.openweathermap.org/api_keys) and copy your key (the long alphanumeric string, not the name).
+3. Create a `.env` file inside the `11_projects/` folder:
+
+```bash
+echo "OPENWEATHER_API_KEY=your_api_key_here" > 11_projects/.env
+```
+
+Replace `your_api_key_here` with the key you copied.
+
+> **Important:** New API keys can take up to 2 hours to become active. If you get a 401 Unauthorized error, wait and try again later.
+
+> **Important:** Never commit your `.env` file to git. The `.gitignore` at the project root already excludes it.
+
 ## How to Run the Programs
-1. Make sure Python is installed on your machine.
-2. Navigate to the project directory in your terminal.
-3. Run the desired script using the command:
-   ```bash
-   python 11_projects/file_organizer.py
-   ```
+
+1. Make sure your virtual environment is active (you should see `(venv)` in your terminal).
+2. Navigate to the project root in your terminal.
+3. Run the desired script:
+
+```bash
+python 11_projects/file_organizer.py
+python 11_projects/todo_app.py
+python 11_projects/weather_app.py
+```
+
+### Deactivate the virtual environment
+
+When you are done, deactivate the virtual environment with:
+
+```bash
+deactivate
+```

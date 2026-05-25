@@ -44,6 +44,36 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### API Keys / Claves API
+
+Some projects (e.g. `11_projects/weather_app.py`) require API keys. Follow these steps:
+
+Algunos proyectos (e.g. `11_projects/weather_app.py`) requieren claves API. Sigue estos pasos:
+
+#### 1. Get an OpenWeatherMap API Key / Obtener una clave API de OpenWeatherMap
+
+1. Go to / Ir a [openweathermap.org](https://openweathermap.org/) and create a free account / y crear una cuenta gratuita.
+2. Go to / Ir a **My API Keys** in your account dashboard / en el panel de tu cuenta: [openweathermap.org/api_keys](https://home.openweathermap.org/api_keys)
+3. Copy your API key / Copiar tu clave API.
+
+#### 2. Create a `.env` file / Crear un archivo `.env`
+
+Create a file named `.env` inside the project folder (e.g. `11_projects/`):
+
+Crear un archivo llamado `.env` dentro de la carpeta del proyecto (e.g. `11_projects/`):
+
+```bash
+echo "OPENWEATHER_API_KEY=your_api_key_here" > 11_projects/.env
+```
+
+Replace `your_api_key_here` with the key you copied from OpenWeatherMap.
+
+Reemplazar `your_api_key_here` con la clave que copiaste de OpenWeatherMap.
+
+> **Note / Nota:** Never commit `.env` files to git. Add `.env` to your `.gitignore`.
+>
+> Nunca subas archivos `.env` a git. Agrega `.env` a tu `.gitignore`.
+
 ### Deactivate / Desactivar
 
 ```bash

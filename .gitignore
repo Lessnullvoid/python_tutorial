@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+mientorno/
+venv/
+weather_history.json
