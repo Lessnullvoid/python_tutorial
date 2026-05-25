@@ -2,7 +2,7 @@
 
 ## English
 
-A hands-on Python tutorial designed for university students starting from scratch.
+A hands-on Python tutorial designed for starting from scratch.
 Covers fundamentals through advanced topics with runnable code examples organized in 11 progressive chapters.
 
 -> [Start the tutorial in English](en/README.md)
@@ -11,7 +11,7 @@ Covers fundamentals through advanced topics with runnable code examples organize
 
 ## Espanol
 
-Un tutorial practico de Python disenado para estudiantes universitarios desde cero.
+Un tutorial practico de Python disenado para empezar desde cero.
 Cubre desde fundamentos hasta temas avanzados con ejemplos ejecutables organizados en 11 capitulos progresivos.
 
 -> [Comenzar el tutorial en Espanol](es/README.md)
