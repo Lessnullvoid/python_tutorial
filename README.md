@@ -1,96 +1,50 @@
+# Python Tutorial / Tutorial de Python
 
-## Descripción General
+## English
 
-Este tutorial de Python está diseñado tanto para principiantes como para aquellos que desean mejorar sus habilidades. El contenido está organizado en varias secciones que te guiarán desde la comprensión de los conceptos básicos hasta abordar temas avanzados. Ya sea que seas nuevo en la programación o quieras perfeccionar tu conocimiento existente, esta guía te proporcionará ejemplos prácticos y explicaciones completas.
+A hands-on Python tutorial designed for university students starting from scratch.
+Covers fundamentals through advanced topics with runnable code examples organized in 11 progressive chapters.
 
-El tutorial cubre:
-
-1. [Introducción](#introducción)
-2. [Basic Syntax](#basic-syntax)
-3. [Control structures](#data-types)
-4. [Data structures](#variables)
-5. [Funtions](#operators)
-6. [Modules](#control-flow)
-7. [File Handling](#functions)
-8. [OOP](#modules)
-9. [Advance](#file-handling)
-10. [Libraries](#error-handling)
-11. [Projects](#classes-and-objects)
-12. [Configuración del Entorno Virtual](#configuracion-del-entorno-virtual)
-
-## Cómo Usar Este Tutorial
-
-Cada sección se construye progresivamente:
-
-- Comienza con la **Introducción** para comprender el propósito del tutorial.
-- Prepárate con los **Prerrequisitos**.
-- Configura tu entorno siguiendo las instrucciones de **Instalación**.
-- Mejora tu comprensión con los **Conceptos Básicos**.
-- Desafíate con los **Temas Avanzados** y los **Ejemplos**.
-- Resuelve cualquier inconveniente en la sección de **Resolución de Problemas**.
-- Finaliza con la **Conclusión** y explora más detalles en la sección de **Referencias**.
-
-Espero que encuentres este tutorial fácil de seguir y que mejore tu experiencia en el aprendizaje de Python.
+-> [Start the tutorial in English](en/README.md)
 
 ---
 
-## Configuración del Entorno Virtual
+## Espanol
 
-### ¿Por qué usar un entorno virtual?
+Un tutorial practico de Python disenado para estudiantes universitarios desde cero.
+Cubre desde fundamentos hasta temas avanzados con ejemplos ejecutables organizados en 11 capitulos progresivos.
 
-Un entorno virtual permite aislar las dependencias de tu proyecto, asegurando que cada proyecto utilice las versiones correctas de las bibliotecas necesarias sin conflicto con otras instalaciones globales de Python.
+-> [Comenzar el tutorial en Espanol](es/README.md)
 
-### Paso 1: Instalación de Python
+---
 
-Asegúrate de tener instalada la versión de Python 3.8 o superior. Puedes descargarla desde el sitio oficial de [Python](https://www.python.org/).
+## Setup / Configuracion
 
-### Paso 2: Crear un entorno virtual
+### Prerequisites / Prerrequisitos
 
-#### En Windows:
+Python 3.8+ ([download / descargar](https://www.python.org/))
 
-1. Abre el símbolo del sistema (cmd) o PowerShell.
-2. Navega al directorio de tu proyecto.
-3. Ejecuta el siguiente comando para crear un entorno virtual:
-   ```bash
-   python -m venv venv
-   ```
-4. Activa el entorno virtual:
-   ```bash
-   .\venv\Scripts\activate
-   ```
+### Virtual Environment / Entorno Virtual
 
-#### En MacOS / Linux:
-
-1. Abre la terminal.
-2. Navega al directorio de tu proyecto.
-3. Ejecuta el siguiente comando para crear un entorno virtual:
-   ```bash
-   python3 -m venv venv
-   ```
-4. Activa el entorno virtual:
-   ```bash
-   source venv/bin/activate
-   ```
-
-### Paso 3: Instalar las dependencias necesarias
-
-Con el entorno virtual activado, instala las bibliotecas requeridas utilizando el archivo `requirements.txt`:
-
+**Windows:**
 ```bash
-pip install -r rg
+python -m venv venv
+.\venv\Scripts\activate
 ```
 
-### Paso 4: Verificar la instalación
-
-Confirma que todas las bibliotecas están instaladas correctamente ejecutando:
-
+**MacOS / Linux:**
 ```bash
-pip list
+python3 -m venv venv
+source venv/bin/activate
 ```
 
-### Desactivar el entorno virtual
+### Install Dependencies / Instalar Dependencias
 
-Cuando termines de trabajar en tu proyecto, desactiva el entorno virtual con el siguiente comando:
+```bash
+pip install -r requirements.txt
+```
+
+### Deactivate / Desactivar
 
 ```bash
 deactivate
@@ -98,12 +52,7 @@ deactivate
 
 ---
 
-Configurar un entorno virtual es una práctica esencial para garantizar que tus proyectos funcionen correctamente y evitar conflictos de versiones entre diferentes proyectos.
+### Terminal Cheat Sheets
 
-
----
-
-Para aprender a navegar en tu terminal utiliza el siguiente cheat sheet donde encontraras una lista completa de comandos para mac: https://github.com/0nn0/terminal-mac-cheatsheet/tree/master/Español
-
-Y para entornos en windowns: https://www.stationx.net/windows-command-line-cheat-sheet/
-
+- MacOS/Linux: https://github.com/0nn0/terminal-mac-cheatsheet
+- Windows: https://www.stationx.net/windows-command-line-cheat-sheet/
