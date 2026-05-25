@@ -3,7 +3,7 @@ import requests
 import json
 from datetime import datetime
 import os
-from dotenv import load_load_dotenv
+from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
